@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="title">
+      <h1>Simple, traffic-based pricing</h1>
+    </div>
+    <div class="title-disc">
+      <p> Sign-up for our 30-day trial. </p>
+      <p>No credit card required. </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div class="pv-container"><span class="pageviews">100K</span> Pageviews</div>
+      <div class="price-range-container">
+        <label for="price-range"></label>
+        <input class="price-range" type="range" name="price-range" id="price-range" min="0" max="4" />
+        <div class="range-filled"></div>
+      </div>
+      <div class="price-container"><span class="price">$16.00</span> / month</div>
+      <div class="billing">
+        <label for="yearly_flg" class="yearly_flg_container">
+          Monthly Billing
+          <span class="yearly_flg_toggle">
+            <input type="checkbox" name="yearly_flg" id="yearly_flg">
+          </span>
+          Yearly Billing
+          <span class="discount"> 25% <span>discount</span></span>
+        </label>
+      </div>
+    </div>
+    <hr>
+    <div class="card-bottom">
+      <ul>
+        <li><img alt="Icon-check" src="images/icon-check.svg"> Unlimited websites</li>
+        <li><img alt="Icon-check" src="images/icon-check.svg"> 100% data ownership</li>
+        <li><img alt="Icon-check" src="images/icon-check.svg"> Email reports</li>
+      </ul>
+      <button>Start my trial</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
